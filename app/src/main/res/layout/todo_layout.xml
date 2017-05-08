@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/materia"
+        android:hint="Introduce tu materia..."
+        android:textSize="25dp"
+        android:gravity="top"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <!-- Linear layout that contains all three priority buttons (high, medium, low)
+        in a single line -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="5">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/buttonP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color1"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/buttonP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color2"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/buttonP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color3"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/buttonP4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color4"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/buttonP5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color5"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- RadioGroup for visible selection of a priority -->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="5">
+
+            <RadioButton
+                android:id="@+id/radButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos del Profesor:"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profesor"
+        android:hint="Nombre..."
+        android:textSize="18dp"
+        android:gravity="top"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        android:hint="Mail..."
+        android:textSize="18dp"
+        android:gravity="top"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/asesoria"
+        android:hint="Horario de asesorias..."
+        android:textSize="18dp"
+        android:gravity="top"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Calificaciones"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="4"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Actividades..."
+            android:id="@+id/actividades"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tareas..."
+            android:id="@+id/tareas"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quizes..."
+            android:id="@+id/quizes"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Examenes..."
+            android:id="@+id/examenes"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promedio: 0.0"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tareas:"
+        android:textSize="25dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notas"
+        android:hint="Anota tus tareas"
+        android:textSize="18dp"
+        android:gravity="top"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textSize="20sp"
+        android:textColor="#fff8b2"
+        android:onClick="saveButtonClicked"
+        android:background="#dea140"/>
+
+</LinearLayout>
